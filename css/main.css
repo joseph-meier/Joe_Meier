@@ -71,7 +71,6 @@ display: -webkit-flex;
     z-index: 2;
     width: 80%;
     padding-bottom: 15px;
-    padding-top: 30px;
 }
 #navcontainer ul li {
     position: relative;
@@ -90,6 +89,7 @@ display: -webkit-flex;
   margin: auto;
   z-index: 2;
   background-color: #f9f9f9;
+  margin-top: 40px;
 }
 
 .gift {
