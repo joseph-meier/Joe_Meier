@@ -1,0 +1,375 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+font-family: font2;
+src: url(images/font2.ttf);
+}
+
+
+body {
+    margin: 0px;
+    width: 100%;
+
+ 
+    
+}
+
+
+.logo {
+   padding: 20px;
+   background-color: white;
+}
+
+    
+#nav-button {
+  
+  width: 170px;
+  height: 60px;
+  font-size: 15px;
+  color:white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #30489d;
+  opacity: 1;
+  border: 0;
+  border-bottom: 2px solid #092168;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #092168;
+  box-shadow: inset 0 -2px #092168;
+  transition: transform .3s ease-in-out;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+}
+
+#nav-button:hover {
+    background:#092168;
+}
+
+#navcontainer{
+    display: -webkit-flex;
+    -webkit-justify-content: flex-end;
+    -webkit-flex-direction: row;
+    flex-wrap: wrap-reverse;
+    position: relative;
+    top: 0;
+    left: 0;
+    right:0;
+    margin:auto;
+    z-index: 2;
+    width: 80%;
+    padding-bottom: 15px;
+}
+#navcontainer ul li {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    flex-wrap: wrap-reverse;
+}
+
+.info {
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-flex-direction: column;
+  width: 80%;
+  margin: auto;
+  z-index: 2;
+  background-color: #f7f7f7;
+}
+
+.gift {
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-flex-direction: row;
+    margin: 100px;
+}
+
+.size {
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-flex-direction: row;
+    margin: 100px;
+}
+
+
+#gift-title {
+  text-align: left;
+  align-items: left;
+  padding-left: 15px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+  color: #30489d;
+}
+
+#size-title {
+  text-align: left;
+  align-items: left;
+  padding-left: 15px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+  color: #30489d;
+}
+
+#sc:hover {
+  color: black;
+}
+
+hr {
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  align-items: flex-start;
+  border:none;
+  border-top:5px dotted #f00;
+  color:#fff;
+  height:1px;
+  width:80%;
+  margin-left: 15px;
+}
+
+.button-row {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.button-row > div {
+  position: relative;
+  width: 25vw;
+  height: 60px;
+  margin: 0 15px;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  perspective: 1000px;
+}
+.button-row > div > a {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(-25px);
+  -moz-transform: translateZ(-25px);
+  -ms-transform: translateZ(-25px);
+  -o-transform: translateZ(-25px);
+  transform: translateZ(-25px);
+  -webkit-transition: -webkit-transform 0.25s;
+  -moz-transition: -moz-transform 0.25s;
+  transition: transform 0.25s;
+}
+.button-row > div > a::before, .button-row > div > a::after {
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 25vw;
+  height: 60px;
+  position: absolute;
+  border: 8px solid #ec1c4e;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+  content: attr(title);
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.button-row > div > a::before {
+  background-color: #ec1c4e;
+  color: #fff;
+  -webkit-transform: rotateY(0deg) translateZ(25px);
+  -moz-transform: rotateY(0deg) translateZ(25px);
+  -ms-transform: rotateY(0deg) translateZ(25px);
+  -o-transform: rotateY(0deg) translateZ(25px);
+  transform: rotateY(0deg) translateZ(25px);
+}
+.button-row > div > a::after {
+  background-color: #fff;
+  border-color: #ec1c4e;
+  color: #000;
+  -webkit-transform: rotateX(90deg) translateZ(25px);
+  -moz-transform: rotateX(90deg) translateZ(25px);
+  -ms-transform: rotateX(90deg) translateZ(25px);
+  -o-transform: rotateX(90deg) translateZ(25px);
+  transform: rotateX(90deg) translateZ(25px);
+}
+.button-row > div > a:hover {
+  -webkit-transform: translateZ(-25px) rotateX(-90deg);
+  -moz-transform: translateZ(-25px) rotateX(-90deg);
+  -ms-transform: translateZ(-25px) rotateX(-90deg);
+  -o-transform: translateZ(-25px) rotateX(-90deg);
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+
+/* this is just icing */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+.main, h1 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html, body, .main {
+  height: 100%;
+}
+
+
+
+
+
+
+/* SECOND SET */
+
+
+
+
+.button-row-size {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.button-row-size > div {
+  position: relative;
+  width: 16vw;
+  height: 60px;
+  margin: 0 15px;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  perspective: 1000px;
+}
+.button-row-size > div > a {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(-25px);
+  -moz-transform: translateZ(-25px);
+  -ms-transform: translateZ(-25px);
+  -o-transform: translateZ(-25px);
+  transform: translateZ(-25px);
+  -webkit-transition: -webkit-transform 0.25s;
+  -moz-transition: -moz-transform 0.25s;
+  transition: transform 0.25s;
+}
+.button-row-size > div > a::before, .button-row-size > div > a::after {
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 16vw;
+  height: 60px;
+  position: absolute;
+  border: 8px solid #ec1c4e;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+  content: attr(title);
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.button-row-size > div > a::before {
+  background-color: #ec1c4e;
+  color: #fff;
+  -webkit-transform: rotateY(0deg) translateZ(25px);
+  -moz-transform: rotateY(0deg) translateZ(25px);
+  -ms-transform: rotateY(0deg) translateZ(25px);
+  -o-transform: rotateY(0deg) translateZ(25px);
+  transform: rotateY(0deg) translateZ(25px);
+}
+.button-row-size > div > a::after {
+  background-color: #fff;
+  border-color: #ec1c4e;
+  color: #000;
+  -webkit-transform: rotateX(90deg) translateZ(25px);
+  -moz-transform: rotateX(90deg) translateZ(25px);
+  -ms-transform: rotateX(90deg) translateZ(25px);
+  -o-transform: rotateX(90deg) translateZ(25px);
+  transform: rotateX(90deg) translateZ(25px);
+}
+.button-row-size > div > a:hover {
+  -webkit-transform: translateZ(-25px) rotateX(-90deg);
+  -moz-transform: translateZ(-25px) rotateX(-90deg);
+  -ms-transform: translateZ(-25px) rotateX(-90deg);
+  -o-transform: translateZ(-25px) rotateX(-90deg);
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+
+/* this is just icing */
+body {
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+.main-size, h1 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html, body, .main-size {
+  height: 100%;
+}
+
+
+#small {
+  font-size: 8px;
+}
+
+#medium {
+  font-size: 20px;
+}
+
+#large {
+  font-size: 40px;
+}
